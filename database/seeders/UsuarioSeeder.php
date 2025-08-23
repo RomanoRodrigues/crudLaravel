@@ -12,7 +12,8 @@ class UsuarioSeeder extends Seeder
         $dados=[
             'name'=>"Tiago", 
             'email'=>"admin@email",
-            'password'=>bcrypt("123")
+            'password'=>bcrypt("123"),
+            'img'=>null
         ];
 
         User::create($dados);
@@ -20,7 +21,8 @@ class UsuarioSeeder extends Seeder
         $dados=[
             'name'=>"malcom",
             'email'=>"malcom@unesp.br",
-            'password'=>bcrypt("senhadomalcom")
+            'password'=>bcrypt("senhadomalcom"),
+            'img'=>null
         ];
         
         User::create($dados);
